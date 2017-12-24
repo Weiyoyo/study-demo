@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content" contect="text/html;charset="utf-8"/>
+	<title>CSS优先级</title>
+	<style type="text/css">
+	*{color:black;} /*0*/
+	b{color:purple;} /*1*/
+	p b{color:yellow;} /*2*/
+	.classbilue{color:blue;} /*10*/
+	div #text2 b{color:gray;} /*102*/
+	#text1 p b{color:orange;}  /*102*/
+	div p .classblue{color:red;} /*12*/
+	</style>
+<body>
+    <p>派生选择器优先级</P>
+	<div id="text1">
+	  <h1>CSS样式优先选择级</h1>
+	  <p id="text2">所谓<b class="classblue">CSS优先级</b>指CSS样式在浏览器中被解析的先后顺序</p>
+	</div>
+</body>
+</html>

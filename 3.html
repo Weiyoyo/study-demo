@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content" contect="text/html;charset="utf-8"/>
+	<title>复杂表单</title>
+	</head>
+	
+    <body>
+	     <h1 align="center">注册信息</h1>
+	<hr color="#336699"/>
+	  <form align="center">
+	     <table width="500px" bgcolor="white" align="center">
+		    <tr>
+		        <td align="right">姓名：</td>
+				<td align="left"><input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名"	/></td>
+	        </tr>
+	        <tr>
+		        <td align="right">邮箱:</td>
+				<td align="left"><input type="text" name="mail" value="@163.com"/></td>
+	        </tr>
+		    <tr>
+		        <td align="right">密码:</td>
+				<td align="left"><input type="password" name="paw" size="25" maxlength="6" placeholder="请输入密码"	/></td>
+	        </tr>
+			<tr>
+		        <td align="right">确认密码:</td>
+				<td align="left"><input type="password" name="paw-confirm" size="25" maxlength="6" placeholder="请再次输入密码"	/></td>
+	        </tr>
+			<tr>
+		        <td align="right">上传照片:</td>
+				<td align="left"><input type="file" name="file"/></td>
+	        </tr>
+		    <tr>
+		        <td align="right">性别:</td>
+				<td align="left">男<input type="radio" name="sex" value="man"/>
+				    女<input type="radio" name="sex" value="woman"/>
+					保密<input type="radio" name="sex" value="bm" checked/></td>
+	        </tr>
+			<tr>
+		        <td align="right">爱好:</td>
+				<td align="left">唱歌<input type="checkbox" name="bx1" value="sing"/>
+				    跳舞<input type="checkbox" name="bx1"value="dance"/>
+				    唱歌<input type="checkbox" name="bx1" value="read" checked/></td>
+	        </tr>
+			<tr>
+		        <td align="right">城市:</td>
+				<td align="left">
+				  <select>
+				     <option value="xz">--请选择--</option>
+					 <option value="bj">北京</option>
+					 <option value="sh">上海</option>
+					 <option value="sz">深圳</option>
+					 <option value="gz" selected>广州</option>
+					 <option value="nc">南昌</option>
+				  </select>
+				  
+				  <select name="city" size="4" multiple>
+				     <option value="bj">北京</option>
+					 <option value="sh">上海</option>
+					 <option value="sz">深圳</option>
+					 <option value="gz">广州</option>
+					 <option value="nc">南昌</option>
+				  </select>
+				  
+				  <select name="city" >
+				    <option value="xz">--请选择--</option>
+					<optgroup label="北方">
+				      <option value="bj">北京</option>
+					  <option value="sh">上海</option>
+					  </optgroup label="北方">
+					<optgroup label="南方">
+					 <option value="sz">深圳</option>
+					 <option value="gz">广州</option>
+					 <option value="nc">南昌</option>
+					</optgroup label="南方">
+				  </select>
+				 
+				  <select name="city" size="3">
+				    <option value="xz">--请选择--</option>
+					<optgroup label="北方">
+				      <option value="bj">北京</option>
+					  <option value="sh">上海</option>
+					  </optgroup label="北方">
+					<optgroup label="南方">
+					 <option value="sz">深圳</option>
+					 <option value="gz">广州</option>
+					 <option value="nc">南昌</option>
+					</optgroup label="南方">
+				  </select>
+				</td>
+	        </tr>
+			<tr>
+			<td align="right">简介:</td>
+			<td align="left">
+			   <textarea name="jj" rows="6" cols="50" placeholder="请输入个人介绍">
+			   </textarea>
+			</td>
+			</tr>
+			<tr>
+		        <td colspan="2" align="center">
+				<input type="buttom" value="来点我" name="button"/>
+				<input type="submit" value="submit" name="submit"/>
+				<input type="reset" value="reset" name="reset"/>
+		        <input type="image" name="image-buttom" src="http://pic35.nipic.com/20131125/2529276_184904005335_2.jpg" width="30px" height="30px"/></td>
+	       
+			</tr>
+			<tr>
+			    <td><input type="hidden" name="hidden" value="这是一个用户注册信息"/></td>
+		        <td></td>
+			</tr>
+	    </table>
+	  </form>
+	
+	
+	</body>
+</html>
