@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>页面布局-行布局</title>
+  <style type="text/css">
+	  body{margin:0;padding:0;color:#fff;text-align:center;/*父元素中的子孙元素（行内元素）相对于子孙元素最接近的父元素水平居中*/font-size:16px;}
+    .header{width:100%;/*行布局自适应*/height:50px;background:#333;margin:0 auto;/*块集元素水平居中*/line-height:50px;/*块集元素垂直居中*/position: fixed;}
+    .banner{width:800px;height:300px;background:#30a457;margin:0 auto;line-height:300px;padding-top:50px;/*防止鼠标滚动时header盖住banner内容部分*/}
+    .container{width:800px;height:1000px;background:#4c77f2;margin:0 auto;}
+    .footer{width:800px;height:100px;background:#333;margin:0 auto;line-height:100px;}
+  </style>
+ </head>
+ <body>
+         <div class="header">这是页面的头部</div>
+         <div class="banner">这是页面的banner</div>
+         <div class="container">这是页面的内容</div>
+         <div class="footer">这是页面的尾部</div>
+</body>
+</body>
+ </html>
