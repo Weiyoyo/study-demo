@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>圣杯布局</title>
+  <style type="text/css">
+	    *{margin:0;padding:0;}
+      body{min-width: 700px;}
+      .header,.footer{
+        float:left;
+        width:100%;
+        background:#ddd;
+        height:40px;
+        line-height:40px;
+        text-align:center;
+      }
+      .container{
+        padding:0 220px 0 220px;
+      }
+      .left,.middle,.right{
+        position:relative;
+        float:left;
+        min-height:300px;
+      }
+      .middle{
+        width:100%;
+        background:#1a5acd;
+      }
+      .left{
+        width:200px;
+        background:#f00;
+        margin-left:-100%;/*设置元素与元素之间的距离，这里设置-100%，说明在它前面的块集元素的前面了*/
+        left:-200px;
+      }
+      .right{
+        width:220px;
+        background:#30a457;
+        margin-left:-220px;
+        right:-200px;
+      }
+  </style>
+ </head>
+ <body>
+       <div class="header">
+          <h4>头部</h4>
+       </div>
+       <div class="container">
+             
+            <div class="middle">
+                <h4>middle</h4>
+                <p>这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间这是中间</p>
+             </div>
+
+             <div class="left">
+                <h4>left</h4>
+                <p>这是左边这是左边这是左边这是左边这是左边这是左边这是左边这是左边这是左边</p>
+             </div>
+             
+             <div class="right">
+                <h4>right</h4>
+                <p>这是右边这是右边这是右边这是右边这是右边这是右边这是右边这是右边这是右边这是右边这是右边这是右边这是右边</p>
+             </div>
+
+      </div>
+      <div class="footer">
+           <h4>尾部</h4> 
+      </div>
+</body>
+</body>
+ </html>

@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.top{	
+	height: 30px;
+	line-height: 30px;
+	font-size:13px;
+	color:#868686;
+	background-color:#f5f5f5;
+}
+
+.wrap{
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+}
+
+p{
+	margin:0;
+	padding:0;
+	display:inline-block;
+}
+
+.call{
+	float:left;
+	padding-left:20px;
+	background:url('./img/icon-call.png') no-repeat center left;
+}
+
+.welcome{
+	float:right;
+}
+
+.top a{
+	color:#2DA5E1;
+	padding-left:10px;
+}
+
+.header{
+	height:92px;
+}
+
+.header .logo{
+	width:402px;
+	height:74px;
+	padding:9px 0;
+	display:inline-block;
+}
+
+.header .logo img{
+	width:100%;
+	height:100%;
+}
+
+.header .search{
+	width:326px;
+	height:38px;
+	position:absolute;
+	right:0;
+	top:29px;
+	background-color:orange;
+}
+
+.ui-search{
+	background:url('./img/ui-search.jpg') center no-repeat;
+	font-size:14px;
+	color:#fff;
+}
+
+.ui-search-selected{
+	width:70px;
+    line-height: 38px;
+    position:absolute;
+    left:0;
+    top:0;
+    text-indent: 14px;
+}
+
+.ui-search-select-list{
+	position:absolute;
+	width:67px;
+	line-height:24px;
+	background:#fff;
+	box-shadow:3px 3px 5px rgba(0 0 0 0.2);
+	left:2px;
+	top:36px;
+}
+
+.ui-search-select-list a{
+	diaplay:block;
+	color:#A5A2A2;
+	text-align:center;
+
+}
+
+.ui-search-input{
+	width:208px;
+	height:26px;
+	position:absolute;
+	left:71px;
+	line-height:26px;
+	color:#A5A2A2;
+	font-size:13px;
+	top:5px;
+}
+
+.ui-search-submit{
+	display:block;
+	position:absolute;
+	right:0;
+	top:1px;
+	height:36px;
+	width:40px;
+}
+
+
+
