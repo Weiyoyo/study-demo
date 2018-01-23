@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>下拉菜单制作</title>
+    <style type="text/css">
+    	*{
+    		padding:0;
+    		margin:0;
+    	}
+        
+        .menu{
+        	width:500px;
+        	height:40px;
+        	background-color:#cacdcf;
+        	margin:0 auto;  
+        	/*块集元素水平居中显示。如果是margin：auto；则是上下左右都居中，前提是元素的高度是固定的，即设置了高度*/ 
+        }
+
+        ul{
+        	list-style: none;  /*去除实心圆点*/ 
+        }
+
+        ul li{
+        	float:left; /*横向显示*/
+        	/*width:90px; /*设置宽度，避免挨在一起,如果宽度较小出现不够，掉下来的情况*/
+        	/*padding:0 10px; /*实现自适应，防止宽度较小而出现不够，掉下来的情况，但是对a元素设置背景后并不能不能覆盖整个小框，所以padding最好设置在a里面*/
+        	text-align: center; 
+        	/*水平居中，只对块集元素设置该性质，让它的所有内联内容都会居中，如在内联元素中设置该性质，是不起作用的*/
+        	line-height: 40px; /*垂直居中，设置与父元素的height值相同即可实现*/
+        	position:relative;/*配合后面的二级菜单的绝对定位*/
+        }
+
+        a{
+        	text-decoration:none;  /*去除链接的下划线*/
+        	color:#0e0f0f;
+        	display:block; /*让行内元素a变成块集元素*/
+        	padding:0 10px; /*自适应，与前面一样，让整个小框背景颜色发生改变*/
+        	height:40px;
+        	width:80px;
+        }
+
+        a:hover{
+        	color:#fff;
+        	background:#666;/*鼠标经过时，文字和背景都变颜色，但只会在文字所在的区域改变，设置a标签为块集元素，可以让整个小框背景颜色发生改变*/
+        }
+
+        ul li ul li{
+        	float:none;/*让二级菜单不再继承一级元素的左浮动，从而可以使二级菜单竖向显示*/
+        	background:#eee;
+        	margin-top: 2px;
+        }
+
+        ul li ul{
+        	position:absolute;
+        	top:40px;
+        	left:0;
+        	display: none;/*二级菜单隐藏*/
+        }
+
+        ul li ul li a:hover{
+        	background-color:#0f6ac6;
+        }
+
+        ul li:hover ul{
+        	display: block;/*鼠标经过时，二级菜单显示，注意冒号前面不能有空格*/
+        }
+
+
+    </style>
+</head>
+
+<body>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="#">首页</a>
+			</li>
+
+			<li>
+				<a href="#">课程大厅</a>
+				<ul>
+					<li><a href="#">javaScript</a></li>
+					<li><a href="#">HTML</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="#">学习中心</a>
+				<ul>
+					<li><a href="#">视频学习</a></li>
+					<li><a href="#">课程学习</a></li>
+					<li><a href="#">实践学习</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="#">经典案例</a>
+			</li>
+
+			<li>
+				<a href="#">关于我们</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
