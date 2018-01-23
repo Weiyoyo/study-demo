@@ -317,6 +317,10 @@ h3{
     padding: 20px 15px;
 }
 
+.goods_item_small>.fl {
+    margin-left: 10px;
+}
+
 footer{
     background-color:#d4d4d4;
     text-align:center;
