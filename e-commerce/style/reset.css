@@ -3,15 +3,18 @@ body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input 
     padding: 0;
 }
 
-body {
-    font-size: 12px;
+body{
+    min-width:1200px;
+    background-color:#edeff0;
+    color:#5e5e5e;
+    font:14px/2em Microsofo Yahei;
 }
 
 img {
     border: none;
 }
 
-li {
+li{
     list-style: none;
 }
 
@@ -28,6 +31,18 @@ textarea {
 a {
     text-decoration: none;
     color: #656565;
+}
+
+a:link,a:visited{
+    color:#14191e;
+    }
+
+a:hover{
+    color:#c9394a;
+    }
+
+a:active{
+    color:#666;
 }
 
 /*清浮动*/
